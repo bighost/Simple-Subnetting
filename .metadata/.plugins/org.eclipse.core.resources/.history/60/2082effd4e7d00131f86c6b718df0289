@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleSubnetting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="dot">.</string>
+	<string name="incomplete_data">Incomplete data</string>
+	<string name="incomplete_data_message">Please fill in correctly the IP address and netmask.</string>
+	<string name="sentence">Your network &, is a & class network, supporting a total of & hosts. The network address is &, the broadcast address is &, also written as &.</string>
+	
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;masterpass_dialog_fail.xml&apos; to &apos;layout&apos;&#x0D;&#x0A;- Original project: &apos;KeyRing&apos;&#x0D;&#x0A;- Destination element: &apos;layout&apos;&#x0D;&#x0A;- Original element: &apos;masterpass_dialog_fail.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="res/layout/masterpass_dialog_fail.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1389530748056" target="/Subnetting/res/layout" units="0" version="1.0"/>
+</session>
