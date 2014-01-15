@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.view.Menu;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -92,7 +94,7 @@ public class MainActivity extends Activity {
 	
 	public static boolean validIP (String ip) {
 	    try {
-	        if (ip == null || ip.isEmpty()) {
+	        if (ip == null) {
 	            return false;
 	        }
 
@@ -247,6 +249,12 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				InputMethodManager inputManager = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE); 
+
+				inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                           InputMethodManager.HIDE_NOT_ALWAYS);
+				
 				String ip1 = ((EditText)findViewById(R.id.ip1)).getText().toString();
 				ip1 = clean(ip1);
 				String ip2 = ((EditText)findViewById(R.id.ip2)).getText().toString();
