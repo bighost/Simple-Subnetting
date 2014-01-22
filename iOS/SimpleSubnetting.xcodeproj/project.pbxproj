@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B396982188D910A0020E7BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B396981188D910A0020E7BC /* SystemConfiguration.framework */; };
+		8B396985188D92E40020E7BC /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B396984188D92E40020E7BC /* SimplePing.m */; };
+		8B396988188D93AC0020E7BC /* SimplePingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B396987188D93AC0020E7BC /* SimplePingHelper.m */; };
 		8B8881F018865ED2001AF2B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8881EF18865ED2001AF2B8 /* Foundation.framework */; };
 		8B8881F218865ED2001AF2B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8881F118865ED2001AF2B8 /* CoreGraphics.framework */; };
 		8B8881F418865ED2001AF2B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8881F318865ED2001AF2B8 /* UIKit.framework */; };
@@ -22,6 +25,7 @@
 		8B88821418865ED2001AF2B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8881F318865ED2001AF2B8 /* UIKit.framework */; };
 		8B88821C18865ED2001AF2B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B88821A18865ED2001AF2B8 /* InfoPlist.strings */; };
 		8B88821E18865ED2001AF2B8 /* SimpleSubnettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B88821D18865ED2001AF2B8 /* SimpleSubnettingTests.m */; };
+		8BED31F6188CB088000F9506 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BED31F5188CB088000F9506 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B396981188D910A0020E7BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B396983188D92E40020E7BC /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = ../../../Downloads/SimplePing/SimplePing.h; sourceTree = "<group>"; };
+		8B396984188D92E40020E7BC /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = ../../../Downloads/SimplePing/SimplePing.m; sourceTree = "<group>"; };
+		8B396986188D93AC0020E7BC /* SimplePingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePingHelper.h; path = "../../../Downloads/SimplePingHelper-master/PingTester/SimplePingHelper.h"; sourceTree = "<group>"; };
+		8B396987188D93AC0020E7BC /* SimplePingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePingHelper.m; path = "../../../Downloads/SimplePingHelper-master/PingTester/SimplePingHelper.m"; sourceTree = "<group>"; };
 		8B8881EC18865ED2001AF2B8 /* SimpleSubnetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSubnetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8881EF18865ED2001AF2B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B8881F118865ED2001AF2B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +64,8 @@
 		8B88821918865ED2001AF2B8 /* SimpleSubnettingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleSubnettingTests-Info.plist"; sourceTree = "<group>"; };
 		8B88821B18865ED2001AF2B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B88821D18865ED2001AF2B8 /* SimpleSubnettingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSubnettingTests.m; sourceTree = "<group>"; };
+		8BED31F4188CB088000F9506 /* SimpleSubnetting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleSubnetting.entitlements; sourceTree = "<group>"; };
+		8BED31F5188CB088000F9506 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B396982188D910A0020E7BC /* SystemConfiguration.framework in Frameworks */,
 				8B8881F218865ED2001AF2B8 /* CoreGraphics.framework in Frameworks */,
 				8B8881F418865ED2001AF2B8 /* UIKit.framework in Frameworks */,
 				8B8881F018865ED2001AF2B8 /* Foundation.framework in Frameworks */,
+				8BED31F6188CB088000F9506 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,8 @@
 		8B8881EE18865ED2001AF2B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B396981188D910A0020E7BC /* SystemConfiguration.framework */,
+				8BED31F5188CB088000F9506 /* AudioToolbox.framework */,
 				8B8881EF18865ED2001AF2B8 /* Foundation.framework */,
 				8B8881F118865ED2001AF2B8 /* CoreGraphics.framework */,
 				8B8881F318865ED2001AF2B8 /* UIKit.framework */,
@@ -114,10 +129,15 @@
 		8B8881F518865ED2001AF2B8 /* SimpleSubnetting */ = {
 			isa = PBXGroup;
 			children = (
+				8BED31F4188CB088000F9506 /* SimpleSubnetting.entitlements */,
 				8B8881FE18865ED2001AF2B8 /* AppDelegate.h */,
 				8B8881FF18865ED2001AF2B8 /* AppDelegate.m */,
 				8B88820118865ED2001AF2B8 /* Main_iPhone.storyboard */,
 				8B88820418865ED2001AF2B8 /* Main_iPad.storyboard */,
+				8B396983188D92E40020E7BC /* SimplePing.h */,
+				8B396984188D92E40020E7BC /* SimplePing.m */,
+				8B396986188D93AC0020E7BC /* SimplePingHelper.h */,
+				8B396987188D93AC0020E7BC /* SimplePingHelper.m */,
 				8B88820718865ED2001AF2B8 /* ViewController.h */,
 				8B88820818865ED2001AF2B8 /* ViewController.m */,
 				8B88820A18865ED2001AF2B8 /* Images.xcassets */,
@@ -202,6 +222,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = firless.com;
 				TargetAttributes = {
+					8B8881EB18865ED2001AF2B8 = {
+						DevelopmentTeam = MMS5R52AYS;
+					};
 					8B88820F18865ED2001AF2B8 = {
 						TestTargetID = 8B8881EB18865ED2001AF2B8;
 					};
@@ -256,6 +279,8 @@
 				8B88820918865ED2001AF2B8 /* ViewController.m in Sources */,
 				8B88820018865ED2001AF2B8 /* AppDelegate.m in Sources */,
 				8B8881FC18865ED2001AF2B8 /* main.m in Sources */,
+				8B396985188D92E40020E7BC /* SimplePing.m in Sources */,
+				8B396988188D93AC0020E7BC /* SimplePingHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SimpleSubnetting/SimpleSubnetting.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSubnetting/SimpleSubnetting-Prefix.pch";
 				INFOPLIST_FILE = "SimpleSubnetting/SimpleSubnetting-Info.plist";
@@ -406,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SimpleSubnetting/SimpleSubnetting.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleSubnetting/SimpleSubnetting-Prefix.pch";
 				INFOPLIST_FILE = "SimpleSubnetting/SimpleSubnetting-Info.plist";
@@ -476,6 +503,7 @@
 				8B88822318865ED2001AF2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B88822418865ED2001AF2B8 /* Build configuration list for PBXNativeTarget "SimpleSubnettingTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +512,7 @@
 				8B88822618865ED2001AF2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
